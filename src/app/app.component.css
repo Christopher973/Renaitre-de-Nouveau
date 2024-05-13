@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+.dropdown-nav_links {
+    @apply flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-blue-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto
+}
+.nav-links {
+    @apply block py-2 px-3 text-gray-900 rounded hover:bg-blue-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0
+}
+
+.dropdown-navbar {  
+    @apply z-10 hidden font-normal bg-white divide-x divide-gray-100 rounded-lg shadow w-44
+}
+
+.dropdown-links {
+    @apply block px-4 py-2 hover:bg-blue-600 hover:text-white
+}
+
+@tailwind utilities;
