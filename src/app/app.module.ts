@@ -7,6 +7,8 @@ import { AccueilComponent } from './pages/accueil/accueil.component';
 import { AgirAvecNousComponent } from './components/agir-avec-nous/agir-avec-nous.component';
 import { QuiSommesNousComponent } from './pages/accueil/qui-sommes-nous/qui-sommes-nous.component';
 import { MissionsEtValeursComponent } from './pages/accueil/missions-et-valeurs/missions-et-valeurs.component';
+import { CharteComponent } from './pages/accueil/charte/charte.component';
+import { ZoneInterventionComponent } from './pages/accueil/zone-intervention/zone-intervention.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { MissionsEtValeursComponent } from './pages/accueil/missions-et-valeurs/
     AgirAvecNousComponent,
     QuiSommesNousComponent,
     MissionsEtValeursComponent,
+    CharteComponent,
+    ZoneInterventionComponent,
   ],
   imports: [
     BrowserModule,

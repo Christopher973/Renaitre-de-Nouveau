@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+.charte_links {
+    @apply inline-block p-4 hover:bg-gray-100
+}
+
+@tailwind utilities;    

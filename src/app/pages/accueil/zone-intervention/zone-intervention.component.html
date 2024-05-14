@@ -1,0 +1,9 @@
+<div class="flex justify-center py-10 gap-5">
+    <button class="btn btn-blue" (click)="showFrance()">Voir la France</button>
+    <button class="btn btn-blue" (click)="showBenin()">Voir le Bénin</button>
+</div>
+
+<div class="border mx-1 md:mx-10">
+    <iframe *ngIf="showFranceFrame" class="w-full h-[50vh]" src="https://visitedplaces.com/embed/?map=france&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=FR&places=~FR-GES.b94d41"></iframe>
+    <iframe *ngIf="showBeninFrame" class="w-full h-[50vh]" src="https://visitedplaces.com/embed/?map=benin&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=0&placeduration=0&slider=0&autoplay=1&autozoom=none&autostep=0&home=FR&places=~BJ-BO.b94d41_BJ-AK.b98741_BJ-KO.d2b919_BJ-MO_BJ-AQ.417fb9"></iframe>
+</div>
