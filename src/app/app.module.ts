@@ -9,6 +9,10 @@ import { QuiSommesNousComponent } from './pages/accueil/qui-sommes-nous/qui-somm
 import { MissionsEtValeursComponent } from './pages/accueil/missions-et-valeurs/missions-et-valeurs.component';
 import { CharteComponent } from './pages/accueil/charte/charte.component';
 import { ZoneInterventionComponent } from './pages/accueil/zone-intervention/zone-intervention.component';
+import { EducationComponent } from './pages/actions-projets/education/education.component';
+import { FormationComponent } from './pages/actions-projets/formation/formation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SanteComponent } from './pages/actions-projets/sante/sante.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { ZoneInterventionComponent } from './pages/accueil/zone-intervention/zon
     MissionsEtValeursComponent,
     CharteComponent,
     ZoneInterventionComponent,
+    EducationComponent,
+    FormationComponent,
+    HeaderComponent,
+    SanteComponent,
   ],
   imports: [
     BrowserModule,

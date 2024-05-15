@@ -1,175 +1,33 @@
-<div class="mt-20">
-    <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-        <li class="me-2">
-            <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="charte_links">Faire le bien</button>
-        </li>
-
-        <li class="me-2">
-            <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false" class="charte_links">La justice</button>
-        </li>
-
-        <li class="me-2">
-            <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab" aria-controls="statistics" aria-selected="false" class="charte_links">Protéger l'opprimé</button>
-        </li>
-
-        <li class="me-2">
-            <button id="orphelin-tab" data-tabs-target="#orphelin" type="button" role="tab" aria-controls="orphelin" aria-selected="false" class="charte_links">Faire droit à l'orphelin</button>
-        </li>
-
-        <li class="me-2">
-            <button id="veuve-tab" data-tabs-target="#veuve" type="button" role="tab" aria-controls="veuve" aria-selected="false" class="charte_links">Défendre la veuve</button>
-        </li>
-    </ul>
-
-    <div id="defaultTabContent">
-        <div class="hidden flex flex-col items-center md:flex-row-reverse gap-5 md:gap-7 py-10 px-4" id="about" role="tabpanel" aria-labelledby="about-tab">
-            <img class="w-4/5 md:w-2/5 lg:w-4/12 mx-auto rounded-lg" src="../../../../assets/img/charte-banner.png" alt="">
-
-            <div class="flex flex-col gap-5">
-                <h1 class="text-xl uppercase font-semibold text-blue-600">Éduquer pour l'action sociale</h1>
-
-                <p class="text lg:w-11/12">Chez l'ONG Renaitre de Nouveau, nous croyons fermement que l'éducation est le fondement de l'action sociale. En enseignant les valeurs de solidarité, d'empathie et de compassion, nous préparons les individus à devenir des agents de changement positif dans leur communauté. Notre programme éducatif vise à sensibiliser les jeunes et les adultes à l'importance de faire le bien autour d'eux, que ce soit en offrant leur temps, leurs compétences ou leurs ressources pour aider ceux qui sont dans le besoin.</p>
-
-                <a class="flex items-center font-medium text-blue-600 hover:text-blue-700" href="">
-                    Voir nos Actions & Projets
-                    <svg class=" w-2.5 h-2.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <div class="hidden flex flex-col items-center md:flex-row-reverse gap-5 md:gap-7 py-10 px-4" id="services" role="tabpanel" aria-labelledby="services-tab">
-            <img class="w-4/5 md:w-2/5 lg:w-4/12 mx-auto rounded-lg" src="../../../../assets/img/charte-banner2.png" alt="">
-
-            <div class="flex flex-col gap-5">
-                <h2 class="text-xl text-blue-600 uppercase font-semibold">Promouvoir l'égalité et la justice sociale</h2>
-
-                <!-- List -->
-                <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Promouvoir l'égalité et la justice sociale.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Traiter chaque individu avec dignité et respect.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Combattre toute forme d'injustice et de discrimination.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Sensibiliser la population aux problèmes sociaux.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Défendre les droits des plus vulnérables.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Œuvrer pour la création d'une société plus juste et équitable pour tous.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="hidden flex flex-col items-center md:flex-row gap-5 md:gap-7 py-10 px-4" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
-            <img class="w-4/5 md:w-2/5 lg:w-4/12 mx-auto rounded-lg" src="../../../../assets/img/charte-banner3.png" alt="">
-
-            <div class="flex flex-col gap-5">
-                <h1 class="text-xl uppercase font-semibold text-blue-600">Soutenir les victimes de l'oppression</h1>
-
-                <p class="text lg:w-11/12">Renaitre de Nouveau s'engage à protéger et à soutenir les victimes de l'oppression sous toutes ses formes. Que ce soit en raison de leur origine ethnique, de leur sexe, de leur religion ou de leur situation socio-économique, nous sommes là pour offrir un refuge sûr et un soutien pratique aux personnes opprimées. Nous travaillons en collaboration avec d'autres organisations et les autorités compétentes pour lutter contre l'oppression et promouvoir les droits fondamentaux de tous les individus.</p>
-
-                <a class="flex items-center font-medium text-blue-600 hover:text-blue-700" href="">
-                    Voir nos Actions & Projets
-                    <svg class=" w-2.5 h-2.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <div class="hidden flex flex-col items-center md:flex-row-reverse gap-5 md:gap-7 py-10 px-4" id="orphelin" role="tabpanel" aria-labelledby="orphelin-tab">
-            <img class="w-4/5 md:w-2/5 lg:w-4/12 mx-auto rounded-lg" src="../../../../assets/img/charte-banner4.png" alt="">
-
-            <div class="flex flex-col gap-5">
-                <h2 class="text-xl text-blue-600 uppercase font-semibold">Faisons droit à l'orphelin</h2>
-
-                <!-- List -->
-                <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Protéger et garantir le bien-être des orphelins.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Offrir un foyer aimant et une éducation de qualité.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Fournir un soutien affectif pour aider à surmonter les défis.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Mettre en place des programmes de parrainage pour chaque enfant.</span>
-                    </li>
-
-                    <li class="flex space-x-2 rtl:space-x-reverse items-center">
-                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                        </svg>
-                        <span class="leading-tight">Assurer un environnement sûr et stable pour favoriser le développement et la réalisation des rêves.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="hidden flex flex-col items-center md:flex-row gap-5 md:gap-7 py-10 px-4" id="veuve" role="tabpanel" aria-labelledby="veuve-tab">
-            <img class="w-4/5 md:w-2/5 lg:w-4/12 mx-auto rounded-lg" src="../../../../assets/img/charte-banner5.png" alt="">
-
-            <div class="flex flex-col gap-5">
-                <h1 class="text-xl uppercase font-semibold text-blue-600">Soutenir les femmes dans le besoin</h1>
-
-                <p class="text lg:w-11/12">Chez Renaitre de Nouveau, nous sommes aux côtés des veuves et des femmes vulnérables pour les aider à reconstruire leur vie et à retrouver leur indépendance. Nous leur offrons un soutien financier, émotionnel et juridique pour surmonter les obstacles auxquels elles sont confrontées et les aider à devenir des membres actifs et autonomes de la société. Nous luttons pour l'élimination des stéréotypes de genre et la promotion de l'égalité des chances pour toutes les femmes.</p>
-
-                <a class="flex items-center font-medium text-blue-600 hover:text-blue-700" href="">
-                    Voir nos Actions & Projets
-                    <svg class=" w-2.5 h-2.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                </a>
-            </div>
+<div class="bg-cover bg-center mt-20"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../../../../assets/img/notre-charte_banner.png'); background-attachment: fixed;">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
+        <h1 class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">Notre
+            Charte, Ensemble pour un Monde Juste et Bienveillant</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+            Chez Renaitre de Nouveau, nous nous engageons à <span class="text-yellow">cultiver une culture du bien, de la justice et de la
+            protection des plus vulnérables</span>. Nous croyons fermement qu'il est de notre devoir de <span class="text-yellow">faire droit aux
+            orphelins et de défendre les veuves</span>, tout en recherchant activement la justice pour tous. Nous nous tenons
+            aux côtés des opprimés, offrant un refuge sûr et un soutien inconditionnel à ceux qui en ont le plus besoin.
+            En travaillant ensemble, nous pouvons construire un avenir où <span class="text-yellow">chacun peut vivre dans la dignité et l'équité</span>.
+        </p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="#"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Nous soutenir
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+            <a href="#"
+                class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Faire un Don
+            </a>
         </div>
     </div>
+</div>
+
+<div>
+    
 </div>
