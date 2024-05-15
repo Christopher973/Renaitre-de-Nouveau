@@ -63,7 +63,7 @@
     @apply rounded-lg md:h-64   
 }
 .card-img-secondary {
-    @apply rounded-lg md:h-64  md:w-64
+    @apply rounded-lg md:h-64 md:w-5/12 lg:w-5/12
 }
 
 .card-content {
