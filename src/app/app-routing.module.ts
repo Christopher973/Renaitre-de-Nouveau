@@ -8,6 +8,10 @@ import { ZoneInterventionComponent } from './pages/accueil/zone-intervention/zon
 import { EducationComponent } from './pages/actions-projets/education/education.component';
 import { FormationComponent } from './pages/actions-projets/formation/formation.component';
 import { SanteComponent } from './pages/actions-projets/sante/sante.component';
+import { SecuriteComponent } from './pages/actions-projets/securite/securite.component';
+import { SansAbrisComponent } from './pages/actions-projets/sans-abris/sans-abris.component';
+import { CentreLoisirComponent } from './pages/actions-projets/centre-loisir/centre-loisir.component';
+import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/galerie-photos.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -18,6 +22,10 @@ const routes: Routes = [
   { path: 'actions-projets/education', component: EducationComponent },
   { path: 'actions-projets/formation', component: FormationComponent },
   { path: 'actions-projets/sante', component: SanteComponent },
+  { path: 'actions-projets/securite', component: SecuriteComponent },
+  { path: 'actions-projets/sans-abris', component: SansAbrisComponent },
+  { path: 'actions-projets/centre-loisir', component: CentreLoisirComponent },
+  { path: 'actions-projets/galerie-photos', component: GaleriePhotosComponent },
 ];
 
 @NgModule({

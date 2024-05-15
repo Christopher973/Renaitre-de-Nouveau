@@ -49,18 +49,18 @@
     @apply flex flex-wrap gap-5
 }  
 .cards-secondary {
-    @apply flex flex-col gap-5 mx-5 lg:mx-20
+    @apply flex flex-col gap-5 px-5 lg:px-20
 }
 
 .card {
-    @apply flex flex-col  gap-10 md:max-w-xl mx-auto max-md:mx-5 shadow-lg rounded-lg cursor-pointer hover:bg-gray-100
+    @apply flex flex-col  gap-10 md:max-w-xl mx-auto max-md:mx-5 shadow-lg rounded-lg cursor-pointer
 }
 .card-secondary {
-    @apply flex flex-col md:flex-row items-center gap-10 shadow-lg rounded-lg cursor-pointer hover:bg-gray-100
+    @apply flex flex-col md:flex-row items-center gap-10 shadow-lg rounded-lg cursor-pointer bg-white
 }
 
 .card-img {
-    @apply rounded-lg md:h-64
+    @apply rounded-lg md:h-64   
 }
 .card-img-secondary {
     @apply rounded-lg md:h-64  md:w-64

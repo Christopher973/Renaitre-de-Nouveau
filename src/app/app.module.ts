@@ -13,6 +13,10 @@ import { EducationComponent } from './pages/actions-projets/education/education.
 import { FormationComponent } from './pages/actions-projets/formation/formation.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SanteComponent } from './pages/actions-projets/sante/sante.component';
+import { SecuriteComponent } from './pages/actions-projets/securite/securite.component';
+import { SansAbrisComponent } from './pages/actions-projets/sans-abris/sans-abris.component';
+import { CentreLoisirComponent } from './pages/actions-projets/centre-loisir/centre-loisir.component';
+import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/galerie-photos.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { SanteComponent } from './pages/actions-projets/sante/sante.component';
     FormationComponent,
     HeaderComponent,
     SanteComponent,
+    SecuriteComponent,
+    SansAbrisComponent,
+    CentreLoisirComponent,
+    GaleriePhotosComponent,
   ],
   imports: [
     BrowserModule,
