@@ -12,6 +12,7 @@ import { SecuriteComponent } from './pages/actions-projets/securite/securite.com
 import { SansAbrisComponent } from './pages/actions-projets/sans-abris/sans-abris.component';
 import { CentreLoisirComponent } from './pages/actions-projets/centre-loisir/centre-loisir.component';
 import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/galerie-photos.component';
+import { EquipeComponent } from './pages/equipe/equipe.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'actions-projets/sans-abris', component: SansAbrisComponent },
   { path: 'actions-projets/centre-loisir', component: CentreLoisirComponent },
   { path: 'actions-projets/galerie-photos', component: GaleriePhotosComponent },
+  { path: 'equipe', component: EquipeComponent },
 ];
 
 @NgModule({
