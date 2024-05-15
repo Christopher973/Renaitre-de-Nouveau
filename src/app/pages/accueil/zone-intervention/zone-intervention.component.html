@@ -1,9 +1,24 @@
-<div class="flex justify-center py-10 gap-5">
+<!-- <div class="flex justify-center py-10 gap-5 mt-10">
     <button class="btn btn-blue" (click)="showFrance()">Voir la France</button>
     <button class="btn btn-blue" (click)="showBenin()">Voir le Bénin</button>
-</div>
+</div> -->
+
+
+
+<section class="bg-white dark:bg-gray-900 mt-10">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-blue-600 md:text-5xl lg:text-6xl dark:text-white">Changer des vies à travers le monde</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Renaitre de Nouveau s'engage à transformer des vies à travers le monde en menant des actions concrètes au Bénin et en France. Notre organisation œuvre sans relâche pour venir en aide aux personnes démunies, offrant un soutien essentiel aux orphelins, aux jeunes en difficulté et aux veuves en situation précaire. Grâce à nos initiatives humanitaires et à notre engagement communautaire, nous apportons un souffle d'espoir là où il est le plus nécessaire, transformant ainsi les destins et laissant une empreinte positive dans le monde entier.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <button class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900" (click)="showFrance()">Voir la France</button>
+            <button class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70" (click)="showBenin()">Voir le Bénin</button>
+        </div>
+    </div>
+</section>
+
 
 <div class="border mx-1 md:mx-10">
+    <i class="text-gray-400">Cliquer pour avoir le nom de la ville</i>
     <iframe *ngIf="showFranceFrame" class="w-full h-[50vh]" src="https://visitedplaces.com/embed/?map=france&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=FR&places=~FR-GES.b94d41"></iframe>
     <iframe *ngIf="showBeninFrame" class="w-full h-[50vh]" src="https://visitedplaces.com/embed/?map=benin&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=0&placeduration=0&slider=0&autoplay=1&autozoom=none&autostep=0&home=FR&places=~BJ-BO.b94d41_BJ-AK.b98741_BJ-KO.d2b919_BJ-MO_BJ-AQ.417fb9"></iframe>
 </div>
