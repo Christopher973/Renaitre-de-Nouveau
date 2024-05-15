@@ -18,6 +18,7 @@ import { SansAbrisComponent } from './pages/actions-projets/sans-abris/sans-abri
 import { CentreLoisirComponent } from './pages/actions-projets/centre-loisir/centre-loisir.component';
 import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/galerie-photos.component';
 import { EquipeComponent } from './pages/equipe/equipe.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { EquipeComponent } from './pages/equipe/equipe.component';
     CentreLoisirComponent,
     GaleriePhotosComponent,
     EquipeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
