@@ -19,6 +19,7 @@ import { CentreLoisirComponent } from './pages/actions-projets/centre-loisir/cen
 import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/galerie-photos.component';
 import { EquipeComponent } from './pages/equipe/equipe.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AgirDonComponent } from './pages/agir-don/agir-don.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     GaleriePhotosComponent,
     EquipeComponent,
     ContactComponent,
+    AgirDonComponent,
   ],
   imports: [
     BrowserModule,
