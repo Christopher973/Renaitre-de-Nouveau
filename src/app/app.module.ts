@@ -20,6 +20,7 @@ import { GaleriePhotosComponent } from './pages/actions-projets/galerie-photos/g
 import { EquipeComponent } from './pages/equipe/equipe.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AgirDonComponent } from './pages/agir-don/agir-don.component';
+import { EvenementsComponent } from './pages/evenements/evenements.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AgirDonComponent } from './pages/agir-don/agir-don.component';
     EquipeComponent,
     ContactComponent,
     AgirDonComponent,
+    EvenementsComponent,
   ],
   imports: [
     BrowserModule,
