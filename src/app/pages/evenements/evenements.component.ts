@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Tooltip, initTWE } from 'tw-elements';
+
 
 @Component({
   selector: 'app-evenements',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './evenements.component.css'
 })
 export class EvenementsComponent {
-
+  ngOnInit() {
+    initTWE({ Tooltip });
+  }
 }
