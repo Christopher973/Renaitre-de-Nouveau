@@ -6,15 +6,24 @@ import { Component } from '@angular/core';
   styleUrl: './zone-intervention.component.css'
 })
 export class ZoneInterventionComponent {
-  showFranceFrame: boolean = true;
+  showWorldFrame: boolean = true;
+  showFranceFrame: boolean = false;
   showBeninFrame: boolean = false;
 
+  showWorld() {
+    this.showWorldFrame = true;
+    this.showFranceFrame = false;
+    this.showBeninFrame = false;
+  }
+
   showFrance() {
+    this.showWorldFrame = false;
     this.showFranceFrame = true;
     this.showBeninFrame = false;
   }
 
   showBenin() {
+    this.showWorldFrame = false;
     this.showFranceFrame = false;
     this.showBeninFrame = true;
   }

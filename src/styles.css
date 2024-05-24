@@ -57,11 +57,17 @@
     @apply bg-blue-600 text-white hover:bg-blue-700
 }
 
-.cards {
+/* .cards {
     @apply flex flex-wrap gap-5
+} */
+.cards {
+    @apply grid grid-cols-1 md:grid-cols-2 pd-x-2 gap-5
 }
-.cards-secondary {
+/* .cards-secondary {
     @apply flex flex-col gap-5 px-5 lg:px-20
+} */
+.cards-secondary {
+    @apply grid grid-cols-2 gap-5 px-24
 }
 .cards-third {
   @apply grid grid-cols-1 md:grid-cols-2 pd-x-2 gap-5
@@ -81,7 +87,7 @@
     @apply rounded-lg md:h-64
 }
 .card-img-secondary {
-    @apply rounded-lg md:h-64 md:w-5/12 lg:w-6/12
+    @apply rounded-lg md:h-64 md:w-5/12 lg:w-5/12
 }
 .card-img-third {
    @apply w-full h-2/3 md:h-3/5

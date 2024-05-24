@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 
-.charte_links {
-    @apply inline-block p-4 hover:bg-gray-100
+.charte-cards {
+    @apply grid grid-cols-1 md:grid-cols-2 mt-32 gap-5
 }
 
+.charte-card {
+    @apply flex shadow-lg items-center gap-5
+}
+
+.charte-img {
+    @apply w-3/6 md:w-3/6 h-full
+}
+.charte-title {
+    @apply md:text-xl font-bold text-blue-600 px-3 md:px-5
+}
 @tailwind utilities;    

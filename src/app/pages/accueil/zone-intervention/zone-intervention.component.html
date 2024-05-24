@@ -3,15 +3,24 @@
         <h1 data-aos="fade-right" class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Changer des vies à travers le monde</h1>
         <p data-aos="fade" data-aos-delay="400" class="mb-8 text-lg font-normal text-slate-300 lg:text-xl sm:px-16 lg:px-48">Renaitre de Nouveau s'engage à transformer des vies à travers le monde en menant des actions concrètes au Bénin et en France. Notre organisation œuvre sans relâche pour venir en aide aux personnes démunies, offrant un soutien essentiel aux orphelins, aux jeunes en difficulté et aux veuves en situation précaire. Grâce à nos initiatives humanitaires et à notre engagement communautaire, nous apportons un souffle d'espoir là où il est le plus nécessaire, transformant ainsi les destins et laissant une empreinte positive dans le monde entier.</p>
         <div data-aos="fade-up" class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <button class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-yellow-300 hover:bg-yellow-400" (click)="showFrance()">Voir la France</button>
+            <button class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-yellow-300 hover:bg-yellow-400" (click)="showWorld()">Voir le monde</button>
+            <button class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100" (click)="showFrance()">Voir la France</button>
             <button class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100" (click)="showBenin()">Voir le Bénin</button>
         </div>
     </div>
 </div>
 
 
-<div class="border mx-1 md:mx-10">
+<!-- <div class="border mx-1 md:mx-10">
     <i class="text-gray-400">Cliquer pour avoir le nom de la ville</i>
     <iframe *ngIf="showFranceFrame" class="w-full h-[100vh]" src="https://visitedplaces.com/embed/?map=france&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=FR&places=~FR-GES.b94d41"></iframe>
     <iframe *ngIf="showBeninFrame" class="w-full h-[100vh]" src="https://visitedplaces.com/embed/?map=benin&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=0&placeduration=0&slider=0&autoplay=1&autozoom=none&autostep=0&home=FR&places=~BJ-BO.b94d41_BJ-AK.b98741_BJ-KO.d2b919_BJ-MO_BJ-AQ.417fb9"></iframe>
+</div> -->
+
+<div class="border mx-1 md:mx-10">
+    <iframe *ngIf="showWorldFrame" class="w-full h-[100vh]" src="https://visitedplaces.com/view/?map=world&projection=geoNaturalEarth1&theme=light-blue&water=0&graticule=0&names=0&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=FR&places=~BJ.b98741"></iframe>
+    <iframe *ngIf="showFranceFrame" class="w-full h-[100vh]" src="https://visitedplaces.com/embed/?map=france&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=2000&placeduration=100&slider=0&autoplay=0&autozoom=none&autostep=0&home=FR&places=~FR-GES.b94d41"></iframe>
+    <iframe *ngIf="showBeninFrame" class="w-full h-[100vh]" src="https://visitedplaces.com/embed/?map=benin&projection=geoMercator&theme=light-blue&water=0&graticule=0&names=1&duration=0&placeduration=0&slider=0&autoplay=1&autozoom=none&autostep=0&home=FR&places=~BJ-BO.b94d41_BJ-AK.b98741_BJ-KO.d2b919_BJ-MO_BJ-AQ.417fb9"></iframe>
 </div>
+
+
