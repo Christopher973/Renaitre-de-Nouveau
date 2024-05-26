@@ -57,17 +57,11 @@
     @apply bg-blue-600 text-white hover:bg-blue-700
 }
 
-/* .cards {
-    @apply flex flex-wrap gap-5
-} */
 .cards {
     @apply grid grid-cols-1 md:grid-cols-2 pd-x-2 gap-5
 }
-/* .cards-secondary {
-    @apply flex flex-col gap-5 px-5 lg:px-20
-} */
 .cards-secondary {
-    @apply grid grid-cols-2 gap-5 px-24
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-5 px-8 md:px-10 lg:px-24
 }
 .cards-third {
   @apply grid grid-cols-1 md:grid-cols-2 pd-x-2 gap-5
@@ -90,8 +84,13 @@
     @apply rounded-lg md:h-64 md:w-5/12 lg:w-5/12
 }
 .card-img-third {
-   @apply w-full h-2/3 md:h-3/5
+   /* @apply w-full h-2/5 */
 }
+.card-img-third {
+   @apply w-full h-2/5 lg:h-3/6
+}
+
+
 
 .card-content {
     @apply flex flex-col gap-5 px-5 pb-5
