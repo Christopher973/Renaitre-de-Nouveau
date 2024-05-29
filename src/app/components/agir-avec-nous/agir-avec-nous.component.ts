@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './agir-avec-nous.component.css'
 })
 export class AgirAvecNousComponent {
-
+  
 }

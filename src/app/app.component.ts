@@ -14,10 +14,21 @@ export class AppComponent implements OnInit {
 
   currentYear: number = new Date().getFullYear();
 
+  showAgirAvecNous: boolean = false;
+
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
     initFlowbite();
     AOS.init({
       duration: 1000,
+    });
+
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        // Check if the current route is '/agir-don'
+        this.showAgirAvecNous = event.urlAfterRedirects !== '/agir-don';
+      }
     });
   }
 }
