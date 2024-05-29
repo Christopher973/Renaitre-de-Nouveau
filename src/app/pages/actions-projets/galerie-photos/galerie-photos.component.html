@@ -60,8 +60,10 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pd-x-2">
 
     <ng-container *ngFor="let photo of photos; let i = index">
-        <div class="h-auto max-w-full rounded-lg">
-          <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png" alt="...">
+        <div class="h-auto max-w-full rounded-lg cursor-pointer">
+            <a href="../../../../assets/img/galerie-photo{{ i + 1 }}.png" target="_blank">
+                <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png" alt="...">
+            </a>
         </div>
       </ng-container>
 
