@@ -21,6 +21,7 @@ import { EquipeComponent } from './pages/equipe/equipe.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AgirDonComponent } from './pages/agir-don/agir-don.component';
 import { EvenementsComponent } from './pages/evenements/evenements.component';
+import { BenevolesComponent } from './components/benevoles/benevoles.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { EvenementsComponent } from './pages/evenements/evenements.component';
     ContactComponent,
     AgirDonComponent,
     EvenementsComponent,
+    BenevolesComponent,
   ],
   imports: [
     BrowserModule,
