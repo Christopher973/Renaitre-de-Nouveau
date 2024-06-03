@@ -9,6 +9,7 @@ import { OnInit } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
   ngOnInit(): void {
     initFlowbite();
   }
