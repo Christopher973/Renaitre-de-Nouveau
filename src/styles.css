@@ -61,7 +61,7 @@
     @apply grid grid-cols-1 md:grid-cols-2 pd-x-2 gap-5
 }
 .cards-secondary {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-5 px-8 md:px-10 lg:px-24
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-10 px-8 md:px-10 lg:px-24
 }
 .cards-third {
     @apply flex flex-wrap gap-5 pd-x-2

@@ -2,7 +2,7 @@
 
 @tailwind components;
 .p-title {
- @apply text-3xl md:text-4xl lg:text-5xl text-center uppercase font-extrabold
+ @apply text-3xl md:text-4xl lg:text-6xl text-center uppercase font-extrabold
 }
 .p-subtitle {
  @apply text-xl md:text-2xl lg:text-3xl text-center uppercase font-extrabold my-8 text-gray-800
@@ -18,7 +18,7 @@
   @apply flex flex-col gap-5 shadow px-4 py-8
 }
 .p-img {
-  @apply rounded h-[40vh];
+  @apply rounded h-[30vh] w-[30vw] ;
 }
 
 .p-card-title {
