@@ -1,72 +1,95 @@
-<div class="bg-blue-600 mt-32">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-        <h1 data-aos="fade-right"
-            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Nous
-            contacter</h1>
-        <p data-aos="fade" data-aos-delay="400"
-            class="mb-8 text-lg font-normal text-slate-300 lg:text-xl sm:px-16 lg:px-48">
-            N'hésitez pas à nous contacter pour toute question, suggestion ou collaboration. Notre équipe est là pour
-            vous aider et travailler ensemble à faire une différence positive dans le monde.</p>
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="../../../assets/form-adhesion.pdf" target="_blank"
-                class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70">
-                Obtenir le Formulaire
-            </a>
-        </div>
+<!--
+<div class="relative bg-blue-600 mt-32 flex flex-col gap-10 py-20 pd-x-2">
+  <h1 data-aos="fade-right" class="text-white font-extrabold text-2xl md:text-3xl lg:text-5xl">Nous
+    contacter</h1>
+
+  <p data-aos="fade" data-aos-delay="500" class="text-lg md:text-xl text-white font-semibold"
+    style="line-height: 2.5rem;">
+    N'hésitez pas à nous contacter pour toute question, suggestion ou collaboration. Notre équipe est là pour
+    vous aider et travailler ensemble à faire une différence positive dans le monde.
+  </p>
+
+  <div data-aos="fade-up"
+    class="absolute bottom-0 flex flex-col gap-2 space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+    <a href="../../../assets/form-adhesion.pdf" target="_blank"
+      class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-yellow-300 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300">
+      Obtenir le Formulaire
+    </a>
+  </div>
+</div>
+-->
+
+<div class="bg-blue-600 dark:bg-gray-900 mt-44">
+  <div class="pt-8 px-4 mx-auto max-w-screen-xl">
+    <div class="flex flex-col gap-10">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">
+        Nous
+        contacter</h1>
+      <p class="text-lg md:text-xl lg:text-2xl font-medium text-white" style="line-height: 3rem;">
+        N'hésitez pas à nous contacter pour toute question, suggestion ou collaboration. Notre équipe est là pour
+        vous aider et travailler ensemble à faire une différence positive dans le monde.
+      </p>
+
+      <div class="flex flex-col max-w-xs sm:max-w-full sm:flex-row gap-2">
+        <a href="../../../assets/form-adhesion.pdf" target="_blank"
+          class="py-2 px-5 text-lg rounded-lg text-white bg-yellow-300 hover:bg-yellow-400 font-medium">Obtenir le
+          Formulaire</a>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="mt-10 px-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
-        
-    <form action="#" class="flex flex-col gap-5 p-5 rounded shadow-lg bg-white lg:col-span-2">
-        <h2 class="title text-xl">Envoyé un message</h2>
-        <hr class="w-28 h-1 bg-blue-600 border-0 rounded">
+<div class="mt-10 py-8 px-4 mx-auto max-w-screen-xl grid grid-cols-1 lg:grid-cols-3 gap-5">
 
-        <div class="grid lg:grid-cols-2 gap-5">
-            <input type="text" name="nom" placeholder="Nom *">
-            <input type="text" name="prenom" placeholder="Prénom *">
-        </div>
-        <input type="email" name="email" placeholder="Email *">
-        <input type="text" name="numero" placeholder="Numéro *" minlength="10" maxlength="10" pattern="[0-9]*">
+  <form action="#" class="flex flex-col gap-5 p-5 rounded shadow-lg bg-white lg:col-span-2">
+    <h2 class="title text-xl">Envoyé un message</h2>
+    <hr class="w-28 h-1 bg-blue-600 border-0 rounded">
 
-        <textarea name="message" rows="4" placeholder="Votre message"></textarea>
-
-        <button type="submit" class="btn btn-secondary btn-blue">Envoyé</button>
-    </form>
-
-    <div class="flex flex-col gap-5 p-5 rounded shadow-lg bg-white">
-        <h2 class="title text-xl">Envoyé un message</h2>
-        <hr class="w-28 h-1 bg-blue-600 border-0 rounded">
-
-        <div class="contact-infos">
-            <div class="infos">
-                <img src="../../../assets/img/phone-icon.png" alt="Contact icon" class="contact-icon">
-                <ul class="contact-list">
-                    <li>(+33) 03 69 14 47 90</li>
-                    <li>(+33) 06 05 74 57 05</li>
-                </ul>
-            </div>
-            <div class="infos">
-                <img src="../../../assets/img/maps-icon.svg" alt="Contact icon" class="contact-icon">
-                <p>74 Rue du Lazaret, <br> 67100 Strasbourg</p>
-            </div>
-            <div class="infos">
-                <img src="../../../assets/img/email-icon.svg" alt="Contact icon" class="contact-icon">
-                <ul class="contact-list">
-                    <li>
-                        <span>Pour toutes informations :    </span>
-                        contact&#64;renaitredenouveau.org
-                    </li>
-                    <li>
-                        <span>Pour les Adhésions et Parrainages :</span>
-                        k.virginie&#64;renaitredenouveau.org
-                    </li>
-                    <li>
-                        <span>Pour les Partenariats :</span>
-                        l.mariette&#64;renaitredenouveau.org
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="grid lg:grid-cols-2 gap-5">
+      <input type="text" name="nom" placeholder="Nom *">
+      <input type="text" name="prenom" placeholder="Prénom *">
     </div>
+    <input type="email" name="email" placeholder="Email *">
+    <input type="text" name="numero" placeholder="Numéro *" minlength="10" maxlength="10" pattern="[0-9]*">
+
+    <textarea name="message" rows="4" placeholder="Votre message"></textarea>
+
+    <button type="submit" class="btn btn-secondary btn-blue">Envoyé</button>
+  </form>
+
+  <div class="flex flex-col gap-5 p-5 rounded shadow-lg bg-white">
+    <h2 class="title text-xl">Envoyé un message</h2>
+    <hr class="w-28 h-1 bg-blue-600 border-0 rounded">
+
+    <div class="contact-infos">
+      <div class="infos">
+        <img src="../../../assets/img/phone-icon.png" alt="Contact icon" class="contact-icon">
+        <ul class="contact-list">
+          <li>(+33) 03 69 14 47 90</li>
+          <li>(+33) 06 05 74 57 05</li>
+        </ul>
+      </div>
+      <div class="infos">
+        <img src="../../../assets/img/maps-icon.svg" alt="Contact icon" class="contact-icon">
+        <p>74 Rue du Lazaret, <br> 67100 Strasbourg</p>
+      </div>
+      <div class="infos">
+        <img src="../../../assets/img/email-icon.svg" alt="Contact icon" class="contact-icon">
+        <ul class="contact-list">
+          <li>
+            <span>Pour toutes informations : </span>
+            contact&#64;renaitredenouveau.org
+          </li>
+          <li>
+            <span>Pour les Adhésions et Parrainages :</span>
+            k.virginie&#64;renaitredenouveau.org
+          </li>
+          <li>
+            <span>Pour les Partenariats :</span>
+            l.mariette&#64;renaitredenouveau.org
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
