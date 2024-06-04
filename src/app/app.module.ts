@@ -22,6 +22,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AgirDonComponent } from './pages/agir-don/agir-don.component';
 import { EvenementsComponent } from './pages/evenements/evenements.component';
 import { BenevolesComponent } from './components/benevoles/benevoles.component';
+import { PartenairesComponent } from './components/partenaires/partenaires.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { BenevolesComponent } from './components/benevoles/benevoles.component';
     AgirDonComponent,
     EvenementsComponent,
     BenevolesComponent,
+    PartenairesComponent,
   ],
   imports: [
     BrowserModule,
