@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './qui-sommes-nous.component.css'
 })
 export class QuiSommesNousComponent {
+  choice: string = "orphelin"
+
 
 }

@@ -36,7 +36,488 @@
   </div>
 </div>
 
+<!-- Slider Carousel -->
+<div class="max-w-screen-xl px-4 mx-auto w-full md:w-[90vw] lg:w-[95vw] h-[45vh] md:h-[50vh] lg:h-[70vh] mt-10">
+  <i>Pour obtenir plus d'informations cliquez sur le bouton</i>
+  <div id="content-carousel" data-carousel="slide" class="relative h-full w-full overflow-hidden z-10">
+    <!-- Carousel wrapper -->
+    <div class="relative h-full overflow-hidden rounded-lg">
 
+      <div data-carousel-item
+        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../assets/img/hero-banner_evenements2.png');">
+
+        <h1 class="text-lg md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+          Nous soutenons les orphelins
+        </h1>
+        <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+          style="line-height: 2.5rem;">
+          Offrir aux orphelins les moyens de s'épanouir et de s'intégrer à la société est l'objectif central.
+
+          Matériel scolaire, cours de soutien, counseling, activités ludiques, hébergement, nourriture, soins de santé,
+          mentorat, projets communautaires et parrainage constituent les piliers de ce soutien complet et
+          multidimensionnel.
+        </p>
+        <button (click)="choice = 'orphelin'"
+          class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
+          savoir plus</button>
+
+      </div>
+
+      <div data-carousel-item
+        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../assets/img/hero-banner_evenements1.png');">
+
+        <h1 class="text-lg md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+          Nous soutenons les jeunes en difficultés
+        </h1>
+        <p class="hidden sm:block px-10 max-w-screen-md text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+          style="line-height: 2.5rem;">
+          Favoriser la réussite scolaire et professionnelle des jeunes est l'objectif principal.
+
+          Rattrapage scolaire, formation professionnelle, orientation, matériel scolaire, soutien financier, stages,
+          aide à l'emploi, entrepreneuriat, counseling, soutien émotionnel, activités récréatives, mentorat, parrainage
+          et partenariats constituent les piliers de ce soutien complet et multidimensionnel.
+        </p>
+        <button (click)="choice = 'jeunes'"
+          class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
+          savoir plus</button>
+
+      </div>
+
+      <div data-carousel-item
+        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../assets/img/hero-banner_evenements2.png');">
+
+        <h1 class="text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+          Nous soutenons les veuves
+        </h1>
+        <p class="hidden sm:block px-10 max-w-screen-md text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+          style="line-height: 2.5rem;">
+          L'objectif principal est d'aider les veuves et leurs familles à s'autonomiser économiquement et à retrouver un
+          bien-être psychologique.
+
+          Microcrédits, coopératives, aide matérielle, formation professionnelle, alphabétisation, counseling, groupes
+          de soutien, activités récréatives et culturelles constituent les piliers de ce soutien complet et
+          multidimensionnel.
+
+
+        </p>
+        <button (click)="choice = 'veuves'"
+          class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
+          savoir plus</button>
+
+      </div>
+
+    </div>
+
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+        data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 mt-10">
+
+  <div id="orphelin" *ngIf="choice === 'orphelin'">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800">Les orphelins</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SOUTIEN ÉDUCATIF</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/ophelin-soutien-educatif.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Fourniture de Matériel
+              Scolaire :</span> Distribution de fournitures scolaires, uniformes et livres pour permettre aux orphelins
+            de
+            poursuivre leur éducation sans obstacles matériels.</p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Cours de rattrapage
+              :</span> Organisation de cours de soutien pour les élèves en difficulté afin de les aider à
+            améliorer leurs performances académiques</p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SOUTIEN PSYCHOSOCIAL</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Counseling :</span>
+            Mise en place de séances de counseling pour aider les enfants à surmonter leurs traumatismes et à développer
+            une résilience émotionnelle.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Activités Récréatives et
+              Culturelles
+              :</span> Organisation d'activités ludiques et culturelles pour favoriser le bien-être émotionnel et social
+            des enfants.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">soutien matériel
+        </h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-materiel.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Hébergement :</span>
+            Créer des centres d'accueil offrant un environnement sûr et stable pour les enfants de la rue et les
+            orphelins.
+
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Nourriture et Soins de
+              Santé
+              :</span> Fourniture de colis alimentaires et accès à des soins médicaux réguliers pour assurer la bonne
+            santé des orphelins.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Intégration
+          Sociale
+        </h5>
+
+        <img class="rounded-lg p-4 " src="../../../../assets/img/orphelin-integration-sociale.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Mentorat
+              :</span>
+            Mise en place de programmes de mentorat où des adultes bienveillants accompagnent les orphelins dans leur
+            développement personnel et professionnel.
+
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Projets Communautaires
+              :</span> Encouragement à la participation des orphelins dans des projets communautaires pour renforcer
+            leur
+            sentiment d'appartenance et leur donner un rôle actif dans la société.
+
+          </p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Parrainage
+              :</span> Parrainage par des familles ou des individus pour fournir un soutien moral et financier.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="jeunes" *ngIf="choice === 'jeunes'">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800">Les jeunes en difficultés</h1>
+
+    <h5 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mt-8">Éducation et Formation</h5>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Accès à
+          l'Éducation</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/jeunes-acces-education.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Rattrapage Scolaire
+              :</span>
+            Programmes éducatifs pour aider les jeunes à reprendre leur scolarité et à obtenir des diplômes.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Formation Professionnelle
+              :</span> Cours de formation professionnelle pour acquérir des compétences pratiques dans divers métiers.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Soutien Scolaire
+        </h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Fourniture de Matériel
+              :</span>
+            Distribution de fournitures scolaires, manuels et uniformes.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Soutien Financier
+              :</span> Prise en charge dans des formations spécialisées.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mt-8">Formation et Insertion
+      Professionnelle</h5>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg p-4 h-3/6 w-full" src="../../../../assets/img/jeunes-formationjpg.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Orientation
+              Professionnelle
+              :</span>
+            Conseils en orientation pour aider les jeunes à identifier et à suivre des parcours professionnels qui
+            correspondent à leurs intérêts et aptitudes.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Stages Professionnels
+              :</span> Placement en stages pour acquérir une expérience professionnelle concrète.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Aide à l'Emploi
+              :</span> Assistance dans la recherche d'emploi, rédaction de CV et préparation aux entretiens.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Programmes
+              d'Entrepreneuriat
+              :</span> Formation et soutien aux jeunes souhaitant démarrer leur propre entreprise, y compris des
+            micro-crédits et des conseils en gestion d'entreprise.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mt-8">Soutien Psychosocial</h5>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Conseil et
+          Thérapie</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/ophelin-soutien-educatif.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Counseling Individuel et
+              de Groupe
+              :</span>
+            Séances de thérapie pour aider les jeunes à surmonter leurs traumatismes et à développer des mécanismes de
+            résilience.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Soutien Émotionnel
+              :</span> Présence d’adultes bienveillants dans le domaine médico-social afin de fournir un soutien
+            émotionnel continu.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Activités
+          Récréatives et Culturelles
+
+        </h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Sports et Loisirs
+              :</span>
+            Organisation d'activités sportives et récréatives pour favoriser le développement social et physique des
+            jeunes.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Ateliers Artistiques
+              :</span> Ateliers de musique, d'art et de théâtre pour encourager l'expression créative et renforcer la
+            confiance en soi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h5 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mt-8">Intégration Sociale
+      Professionnelle</h5>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-lg p-4" src="../../../../assets/img/ophelin-soutien-educatif.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Programmes de Mentorat
+              :</span>
+            Mise en relation avec des mentors qui peuvent offrir des conseils et un soutien à long terme.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Parrainage
+              :</span> Parrainage par des familles ou des individus pour fournir un soutien moral et financier.
+
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Partenariats
+              :</span> Collaboration avec d'autres organisations et structures pour maximiser l'impact des actions
+            menées.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="veuves" *ngIf="choice === 'veuves'">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800">Les veuves</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SOUTIEN ÉDUCATIF</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/ophelin-soutien-educatif.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Fourniture de Matériel
+              Scolaire :</span> Distribution de fournitures scolaires, uniformes et livres pour permettre aux orphelins
+            de
+            poursuivre leur éducation sans obstacles matériels.</p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Cours de rattrapage
+              :</span> Organisation de cours de soutien pour les élèves en difficulté afin de les aider à
+            améliorer leurs performances académiques</p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SOUTIEN PSYCHOSOCIAL</h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Counseling :</span>
+            Mise en place de séances de counseling pour aider les enfants à surmonter leurs traumatismes et à développer
+            une résilience émotionnelle.
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Activités Récréatives et
+              Culturelles
+              :</span> Organisation d'activités ludiques et culturelles pour favoriser le bien-être émotionnel et social
+            des enfants.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">soutien matériel
+        </h5>
+
+        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-materiel.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Hébergement :</span>
+            Créer des centres d'accueil offrant un environnement sûr et stable pour les enfants de la rue et les
+            orphelins.
+
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Nourriture et Soins de
+              Santé
+              :</span> Fourniture de colis alimentaires et accès à des soins médicaux réguliers pour assurer la bonne
+            santé des orphelins.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-gray-900 dark:text-white">Intégration
+          Sociale
+        </h5>
+
+        <img class="rounded-lg p-4 " src="../../../../assets/img/orphelin-integration-sociale.jpg" alt="" />
+
+        <div class="p-5">
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Mentorat
+              :</span>
+            Mise en place de programmes de mentorat où des adultes bienveillants accompagnent les orphelins dans leur
+            développement personnel et professionnel.
+
+          </p>
+
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Projets Communautaires
+              :</span> Encouragement à la participation des orphelins dans des projets communautaires pour renforcer
+            leur
+            sentiment d'appartenance et leur donner un rôle actif dans la société.
+
+          </p>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Parrainage
+              :</span> Parrainage par des familles ou des individus pour fournir un soutien moral et financier.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
 <div class="pd-x-2 mt-32">
   <div>
     <h1 class="p-title mb-20">Les orphelins</h1>
@@ -118,3 +599,4 @@
     </div>
   </div>
 </div>
+-->
