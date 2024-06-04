@@ -1,106 +1,196 @@
-<div class="flex flex-col gap-5 py-10 shadow-lg mt-32 bg-gray-100">
-    <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-blue-600 text-center">Nos bénévoles</h3>
+<!--
+<div class="bg-gray-100 py-4 mt-20">
+  <div *ngFor="let benevole of benevoles" class="px-4 mx-auto max-w-screen-xl grid grid-cols-3">
+    <h5>{{benevole}}</h5>
+  </div>
+</div>
 
-    <div id="content-carousel" class="relative w-full" data-carousel="slide">
 
-        <div class="relative h-56 overflow-hidden rounded-lg">
-    
-            <div class="hidden flex flex-wrap justify-center duration-300 ease-in-out" data-carousel-item>
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 1</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 2</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 3</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
+<div class="bg-gray-100">
+  <div class="px-4 mx-auto max-w-screen-xl grid grid-cols-3 gap-5">
+    <span *ngFor="let benevole of benevoles">
+      <h5>{{benevole}}</h5>
+    </span>
+  </div>
+</div>
+-->
+
+<div class="bg-gray-100 mt-20">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+    <h1
+      class="mb-4 text-2xl leading-10 md:text-4xl lg:text-6xl text-center font-extrabold tracking-tight text-gray-800">
+      Nos bénévoles
+    </h1>
+    <!-- Slider Carousel -->
+    <div class="max-w-screen-xl w-full h-[40vh]">
+      <div id="content-carousel" data-carousel="slide" class="relative h-full w-full overflow-hidden z-10">
+        <!-- Carousel wrapper -->
+        <div class="relative h-full overflow-hidden rounded-lg">
+          <div data-carousel-item class="flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out">
+            <div class="grid grid-cols-3 gap-10 italic">
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Camille
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Romuald
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Vicencia
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Yvonne
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Mariette
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Roselyne
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Virginie
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Marie-France
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Adonis
+              </h5>
+
             </div>
-    
-            <div class="hidden flex flex-wrap justify-center duration-300 ease-in-out" data-carousel-item>
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 4</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 5</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 6</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
+          </div>
+
+          <div data-carousel-item class="flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out">
+            <div class="grid grid-cols-3 gap-10 italic">
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Bachirou
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Lucrèce
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Ruth
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Hélène
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Gédéon
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Inoussa
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Flore
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Clément
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Thomas
+              </h5>
+
             </div>
-    
-            <div class="hidden flex flex-wrap justify-center duration-300 ease-in-out" data-carousel-item>
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 7</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 8</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
-    
-                <div class="flex flex-col space-y-4 p-4">
-                    <h3 class="text-xl font-bold text-center">Titre 9</h3>
-                    <p class="text-gray-700">
-                        <!-- Nulla euismod mi quis augue interdum tincidunt. Donec sed odio dui. Vivamus at augue eget arcu porta congue eget eget vel sapien. -->
-                    </p>
-                    <img class="w-24 h-24 mx-auto rounded-full" src="../../../assets/img/agir-don-adherent.png"
-                        alt="Image 2">
-                </div>
+          </div>
+
+          <div data-carousel-item class="flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out">
+            <div class="grid grid-cols-3 gap-10 italic">
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Diane
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Mélanie
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Natacha
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Barthélémy
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Albertine
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Komlan
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                David
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Gloria
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Sabine
+              </h5>
+
             </div>
-    
+          </div>
+
+          <div data-carousel-item class="flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out">
+            <div class="grid grid-cols-3 gap-10 italic">
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Justin
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Honoré
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Lucresse
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Nour
+              </h5>
+
+              <h5 class="text-xl leading-10 md:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-800">
+                Alima
+              </h5>
+
+            </div>
+          </div>
         </div>
-    
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full " aria-current="true" aria-label="Slide 1"
-                data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full " aria-current="false" aria-label="Slide 2"
-                data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full " aria-current="false" aria-label="Slide 3"
-                data-carousel-slide-to="2"></button>
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
