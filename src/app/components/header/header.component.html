@@ -7,10 +7,10 @@
 
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <div class="flex gap-5">
-        <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+        <a href="https://www.helloasso.com/associations/ong-renaitre-de-nouveau/formulaires/1" target="_blank"
           class="md:hidden lg:flex gap-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 md:px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><span
-            class="hidden md:block">Faire un</span>Don</button>
-        <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+            class="hidden md:block">Faire un</span>Don</a>
+        <button data-modal-target="static-modal" data-modal-toggle="static-modal" type="button"
           class="md:hidden lg:block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">J'achète
           solidaire</button>
       </div>
@@ -24,44 +24,6 @@
             d="M1 1h15M1 7h15M1 13h15" />
         </svg>
       </button>
-    </div>
-
-    <!-- Main modal -->
-    <div id="default-modal" tabindex="-1" aria-hidden="true"
-      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-      <div class="relative p-4 w-full max-w-2xl max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-            <h3 class="text-xl md:text-4xl lg:text-4xl font-extrabold text-blue-600 ">
-              Consulter le site E-commerce
-            </h3>
-            <button type="button"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-              data-modal-hide="default-modal">
-              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-              </svg>
-              <span class="sr-only">Close modal</span>
-            </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-4 md:p-5 space-y-4">
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              L'ONG Renaitre de Nouveau aide les orphelins, les jeunes en difficulté et les veuves au
-              Bénin.
-            </p>
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              Achetez des articles uniques faits main et soutenez directement nos actions. <br>
-              Chaque achat offre un avenir meilleur. <br>
-              Visitez notre site : <a href="#" class="text-blue-600 underline">www.site-ecommerce.fr</a>
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
@@ -194,3 +156,39 @@
     </div>
   </div>
 </nav>
+
+<!-- Main modal -->
+<div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <!-- Modal header -->
+      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Consulter le site E-commerce
+        </h3>
+        <button type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="static-modal">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="p-4 md:p-5 space-y-4">
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          L'ONG Renaître de Nouveau aide les orphelins, les jeunes en difficultés et les veuves au Bénin.
+        </p>
+        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Achetez des articles uniques faits main et soutenez directement nos actions. <br>
+          Chaque achat offre un avenir meilleur. <br>
+          Visitez notre site : <a class="text-blue-600 underline" href="#">www.site-ecommerce.fr</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
