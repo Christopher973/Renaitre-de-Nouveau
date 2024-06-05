@@ -1,4 +1,10 @@
 @tailwind base;
+@media (min-width: 768px) {
+  /* For tablets and larger screens */
+  .pourquoi-text {
+    line-height: 4rem !important;/* Set line-height to 3rem for tablets and larger */
+  }
+}
 
 @tailwind components;
 .p-title {
