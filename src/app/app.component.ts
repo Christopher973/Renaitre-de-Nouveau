@@ -22,6 +22,8 @@ export class AppComponent implements OnInit {
     initFlowbite();
     AOS.init({
       duration: 1000,
+      startEvent: 'DOMContentLoaded', 
+      offset: 10
     });
 
     this.router.events.subscribe(event => {
