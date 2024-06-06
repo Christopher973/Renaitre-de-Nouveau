@@ -18,7 +18,7 @@
         valeurs</a>
       <a data-aos="fade-right" data-aos-delay="300"
         href="https://www.helloasso.com/associations/ong-renaitre-de-nouveau/formulaires/1" target="_blank"
-        class="py-2 px-5 text-lg rounded-lg text-white bg-yellow-300 hover:bg-yellow-400 font-medium">Faire un
+        class="py-2 px-5   rounded-lg text-white bg-yellow-300 hover:bg-yellow-400 font-medium">Faire un
         Don</a>
     </div>
 
@@ -156,7 +156,7 @@
 
 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 mt-10" style="overflow-x: hidden;">
 
-  <div id="orphelin" *ngIf="choice === 'orphelin'">
+  <div id="orphelin">
     <h1 data-aos="fade-right" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-yellow-300">Orphelins / Enfants de la rue / Exploités</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
@@ -268,63 +268,53 @@
     </div>
   </div>
 
-  <div id="jeunes" *ngIf="choice === 'jeunes'">
-    <h1 data-aos="fade-right" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-yellow-300">Jeunes de la rue / en difficultés</h1>
+  <div id="jeunes" >
+    <h1 data-aos="fade-right" class="pt-20 text-4xl md:text-5xl lg:text-6xl font-extrabold text-yellow-300">Jeunes de la rue / en difficultés</h1>
 
-    <h5 data-aos="fade-right" data-aos-delay="200"
-      class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-yellow-300 mt-8">
-      Éducation et Formation</h5>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
       <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
         <h5 data-aos="fade-left" data-aos-delay="300"
-          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Accès à
-          l'Éducation</h5>
+          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Éducation et Formation</h5>
 
         <img class="rounded-lg p-4" src="../../../../assets/img/jeunes-acces-education.jpg" alt="" />
 
         <div data-aos="fade" class="p-5">
 
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Rattrapage Scolaire
-              :</span>
-            Programmes éducatifs pour aider les jeunes à reprendre leur scolarité et à obtenir des diplômes.
-          </p>
+          <p class="mb-3 text-lg font-normal text-blue-600 dark:text-gray-400"><span class="font-bold">Accès à l'éducation
+            :</span>
+        </p>
 
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Formation Professionnelle
-              :</span> Cours de formation professionnelle pour acquérir des compétences pratiques dans divers métiers.
-          </p>
-        </div>
-      </div>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Rattrapage Scolaire
+          :</span>
+        Programmes éducatifs pour aider les jeunes à reprendre leur scolarité et à obtenir des diplômes.
+      </p>
 
-      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Formation Professionnelle
+          :</span> Cours de formation professionnelle pour acquérir des compétences pratiques dans divers métiers.
+      </p>
 
-        <h5 data-aos="fade-left" data-aos-delay="300"
-          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Soutien Scolaire
-        </h5>
-
-        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
-
-        <div data-aos="fade" class="p-5">
+        <p class="mb-3 text-lg font-normal text-blue-600 dark:text-gray-400"><span class="font-bold">Soutien scolaire
+            :</span>
+        </p>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Fourniture de Matériel
-              :</span>
-            Distribution de fournitures scolaires, manuels et uniformes.
-          </p>
+            :</span>
+          Distribution de fournitures scolaires, manuels et uniformes.
+        </p>
 
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Soutien Financier
-              :</span> Prise en charge dans des formations spécialisées.
-          </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Soutien Financier
+            :</span> Prise en charge dans des formations spécialisées.
+        </p>
         </div>
       </div>
-    </div>
-
-    <h5 data-aos="fade-right" class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-yellow-300 mt-8">Formation et
-      Insertion
-      Professionnelle</h5>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
       <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <h5 data-aos="fade-left" data-aos-delay="300"
+          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Formation & Insertion Professionnelle</h5>
+
+
         <img class="rounded-lg p-4 w-full" src="../../../../assets/img/jeunes-formationjpg.jpg" alt="" />
 
         <div data-aos="fade" class="p-5">
@@ -355,19 +345,21 @@
       </div>
     </div>
 
-    <h5 data-aos="fade-right" class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-yellow-300 mt-8">Soutien
-      Psychosocial</h5>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
       <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
         <h5 data-aos="fade-left" data-aos-delay="200"
-          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Conseil et
-          Thérapie</h5>
+          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Soutien
+          Psychosocial</h5>
 
         <img class="rounded-lg p-4" src="../../../../assets/img/jeunes-conseils-therapie.jpg" alt="" />
 
         <div data-aos="fade" class="p-5">
+
+          <p class="mb-3 text-lg font-normal text-blue-600 dark:text-gray-400"><span class="font-bold">Conseils & thérapie
+            :</span>
+          </p>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Counseling Individuel et
               de Groupe
@@ -380,40 +372,29 @@
               :</span> Présence d’adultes bienveillants dans le domaine médico-social afin de fournir un soutien
             émotionnel continu.
           </p>
-        </div>
-      </div>
 
-      <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
-        <h5 data-aos="fade-left"
-          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Activités
-          Récréatives et Culturelles
-        </h5>
-
-        <img class="rounded-lg p-4" src="../../../../assets/img/orphelin-soutien-psychosocial.jpg" alt="" />
-
-        <div data-aos="fade" class="p-5">
+          <p class="mb-3 text-lg font-normal text-blue-600 dark:text-gray-400"><span class="font-bold">Activités récréatives & culturelles 
+            :</span>
+        </p>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Sports et Loisirs
-              :</span>
-            Organisation d'activités sportives et récréatives pour favoriser le développement social et physique des
-            jeunes.
-          </p>
+            :</span>
+          Organisation d'activités sportives et récréatives pour favoriser le développement social et physique des
+          jeunes.
+        </p>
 
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Ateliers Artistiques
-              :</span> Ateliers de musique, d'art et de théâtre pour encourager l'expression créative et renforcer la
-            confiance en soi.
-          </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Ateliers Artistiques
+            :</span> Ateliers de musique, d'art et de théâtre pour encourager l'expression créative et renforcer la
+          confiance en soi.
+        </p>
         </div>
       </div>
-    </div>
-
-    <h5 data-aos="fade-left" class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-yellow-300 mt-8">Intégration
-      Sociale
-      Professionnelle</h5>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
       <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+        <h5 data-aos="fade-left" data-aos-delay="200"
+          class="mb-2 p-5 text-2xl font-bold tracking-tight uppercase text-blue-600 dark:text-white">Intégration Sociale Professionnelle</h5>
+
         <img class="rounded-lg p-4" src="../../../../assets/img/jeunes-integration-sociale.jpg" alt="" />
 
         <div data-aos="fade" class="p-5">
@@ -438,8 +419,8 @@
 
   </div>
 
-  <div id="veuves" *ngIf="choice === 'veuves'">
-    <h1 data-aos="fade-right" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-yellow-300">Veuves / Familles abandonnées</h1>
+  <div id="veuves" >
+    <h1 data-aos="fade-right" class="pt-20 text-4xl md:text-5xl lg:text-6xl font-extrabold text-yellow-300">Veuves / Familles abandonnées</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
@@ -499,10 +480,7 @@
       </div>
 
     </div>
-
-    <h5 data-aos="fade-right" class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-yellow-300 mt-8">Soutien
-      Psychosocial
-    </h5>
+    
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
 
       <div class="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
