@@ -40,28 +40,32 @@
 </div>
 
 <!-- Slider Carousel -->
-<div class="max-w-screen-xl px-4 mx-auto w-full md:w-[90vw] lg:w-[95vw] h-[45vh] md:h-[50vh] lg:h-[90vh] mt-10">
+<div class="max-w-screen-xl px-4 mx-auto w-full md:w-[90vw] lg:w-[95vw] h-[45vh] md:h-[50vh] lg:h-[70vh] mt-10">
   <i>Pour obtenir plus d'informations cliquez sur le bouton</i>
-  <div id="content-carousel" data-carousel="static" class="relative h-full w-full overflow-hidden z-10">
+  <div id="content-carousel" data-carousel="slide" data-carousel-interval="7000" class="relative h-full w-full overflow-hidden z-10">
     <!-- Carousel wrapper -->
     <div class="relative h-full overflow-hidden rounded-lg">
 
       <div data-carousel-item
-        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        class="bg-cover bg-center flex flex-col gap-10 px-8 justify-center items-center duration-300 ease-in-out"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../../assets/img/carousel-orphelin.jpg');">
 
         <h1
-          class="max-w-screen-lg text-center text-lg md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
-          Les orphelins
+          class="max-w-screen-lg text-center text-lg md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white">
+          Orphelins / Enfants de la rue / Exploités
         </h1>
-        <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+        
+        <div class="flex flex-col gap-5 justify-center pt-20">
+          <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
           style="line-height: 2.5rem;">
-          Offrir aux orphelins les moyens de s'épanouir et de s'intégrer à la société est l'objectif central.
-
-          Matériel scolaire, cours de soutien, counseling, activités ludiques, hébergement, nourriture, soins de santé,
-          mentorat, projets communautaires et parrainage constituent les piliers de ce soutien complet et
-          multidimensionnel.
+          Fournir un soutien complet couvrant les besoins éducatifs, émotionnels, matériels etc.
         </p>
+        <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
+        style="line-height: 2.5rem;">
+          Créer un environnement favorable où chaque orphelin peut s'épanouir et devenir autonome.          
+        </p>
+        </div>
+
         <button (click)="choice = 'orphelin'"
           class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
           savoir plus</button>
@@ -69,21 +73,25 @@
       </div>
 
       <div data-carousel-item
-        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        class="bg-cover bg-center flex flex-col gap-10 px-8 justify-center items-center duration-300 ease-in-out"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../../assets/img/carousel-jeunes.jpg');">
 
         <h1
-          class="max-w-screen-lg text-center text-lg md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
-          Les jeunes en difficultés
+          class="max-w-screen-lg text-center text-lg md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white">
+          Jeunes de la rue / en difficultés
         </h1>
-        <p class="hidden sm:block px-10 max-w-screen-md text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+        
+        <div class="flex flex-col gap-5 justify-center pt-20">
+          <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
           style="line-height: 2.5rem;">
-          Favoriser la réussite scolaire et professionnelle des jeunes est l'objectif principal.
-
-          Rattrapage scolaire, formation professionnelle, orientation, matériel scolaire, soutien financier, stages,
-          aide à l'emploi, entrepreneuriat, counseling, soutien émotionnel, activités récréatives, mentorat, parrainage
-          et partenariats constituent les piliers de ce soutien complet et multidimensionnel.
+          Offrir un mélange de soutien de base, psychosocial, éducatif, professionnel et social
         </p>
+        <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
+        style="line-height: 2.5rem;">
+          Créer un environnement où ils peuvent reconstruire leur vie, développer leurs compétences et devenir des membres actifs et autonomes de la société.          
+        </p>
+        </div>
+
         <button (click)="choice = 'jeunes'"
           class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
           savoir plus</button>
@@ -91,40 +99,30 @@
       </div>
 
       <div data-carousel-item
-        class="bg-cover bg-center flex flex-col gap-5 px-8 justify-center items-center duration-300 ease-in-out"
+        class="bg-cover bg-center flex flex-col gap-2 px-8 justify-center items-center duration-300 ease-in-out"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../../../assets/img/carousel-veuves.jpg');">
 
         <h1
-          class="max-w-screen-lg text-center text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-          Les veuves
+          class="max-w-screen-lg text-center text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
+          Veuves / Familles abandonnées
         </h1>
-        <p class="hidden sm:block px-10 max-w-screen-md text-justify text-sm md:text-lg font-semibold text-white lg:text-xl"
+        <div class="flex flex-col gap-5 justify-center pt-20">
+          <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
           style="line-height: 2.5rem;">
-          L'objectif principal est d'aider les veuves et leurs familles à s'autonomiser économiquement et à retrouver un
-          bien-être psychologique.
-
-          Microcrédits, coopératives, aide matérielle, formation professionnelle, alphabétisation, counseling, groupes
-          de soutien, activités récréatives et culturelles constituent les piliers de ce soutien complet et
-          multidimensionnel.
-
+          Fournir un soutien économique, matériel, professionnel, psychosocial, éducatif etc, 
 
         </p>
+        <p class="hidden sm:block px-10 max-w-screen-lg text-justify text-lg md:text-xl font-semibold text-yellow lg:text-2xl"
+        style="line-height: 2.5rem;">
+        Créer un environnement propice à leur autonomie et à leur épanouissement personnel pour qu’elles trouvent les ressources et le soutien nécessaires pour surmonter les défis et construire un avenir meilleur.
+        </p>
+        </div>
         <button (click)="choice = 'veuves'"
           class="inline-flex items-center py-3 px-5 mx-auto text-sm sm:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">En
           savoir plus</button>
 
       </div>
 
-    </div>
-
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-        data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-        data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-        data-carousel-slide-to="2"></button>
     </div>
     <!-- Slider controls -->
     <button type="button"
