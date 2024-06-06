@@ -16,6 +16,8 @@ import { EquipeComponent } from './pages/equipe/equipe.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AgirDonComponent } from './pages/agir-don/agir-don.component';
 import { EvenementsComponent } from './pages/evenements/evenements.component';
+import { AccompagnementLocalComponent } from './pages/actions-projets/accompagnement-local/accompagnement-local.component';
+import { EngagementSolidaireComponent } from './pages/actions-projets/engagement-solidaire/engagement-solidaire.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'actions-projets/securite', component: SecuriteComponent },
   { path: 'actions-projets/sans-abris', component: SansAbrisComponent },
   { path: 'actions-projets/centre-loisir', component: CentreLoisirComponent },
+  { path: 'actions-projets/engagement-solidaire', component: EngagementSolidaireComponent },
+  { path: 'actions-projets/accompagnement-local', component: AccompagnementLocalComponent },
   { path: 'actions-projets/galerie-photos', component: GaleriePhotosComponent },
   { path: 'equipe', component: EquipeComponent },
   { path: 'agir-don', component: AgirDonComponent },

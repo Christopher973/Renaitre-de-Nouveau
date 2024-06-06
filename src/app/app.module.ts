@@ -23,6 +23,8 @@ import { AgirDonComponent } from './pages/agir-don/agir-don.component';
 import { EvenementsComponent } from './pages/evenements/evenements.component';
 import { BenevolesComponent } from './components/benevoles/benevoles.component';
 import { PartenairesComponent } from './components/partenaires/partenaires.component';
+import { EngagementSolidaireComponent } from './pages/actions-projets/engagement-solidaire/engagement-solidaire.component';
+import { AccompagnementLocalComponent } from './pages/actions-projets/accompagnement-local/accompagnement-local.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { PartenairesComponent } from './components/partenaires/partenaires.compo
     EvenementsComponent,
     BenevolesComponent,
     PartenairesComponent,
+    EngagementSolidaireComponent,
+    AccompagnementLocalComponent,
   ],
   imports: [
     BrowserModule,
