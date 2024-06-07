@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
-// import * as AOS from 'aos';
 import * as AOS from 'aos';
 import { NavigationEnd, Router } from '@angular/router';
 @Component({
@@ -20,9 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      duration: 1000,
-      startEvent: 'DOMContentLoaded', 
-      offset: 10
+      duration: 1500,
     });
     initFlowbite();
 
