@@ -21,6 +21,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     AOS.init({
       duration: 1000,
+      startEvent: 'DOMContentLoaded', 
+      offset: 10
     });
     initFlowbite();
 
