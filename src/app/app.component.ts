@@ -19,12 +19,12 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    initFlowbite();
     AOS.init({
       duration: 1000,
       startEvent: 'DOMContentLoaded', 
       offset: 10
     });
+    initFlowbite();
 
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
