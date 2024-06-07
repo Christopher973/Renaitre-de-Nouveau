@@ -7,65 +7,72 @@
     </div>
 </div> -->
 
-<div class="flex flex-col gap-5 mt-32">
-    <h1 data-aos="fade-right" class="text-2xl md:text-3xl lg:text-5xl uppercase font-extrabold text-center text-blue-600">NOS ACTIONS EN IMAGES</h1>
-    <p data-aos="fade" data-aos-delay="400" class="text-gray-500 leading-9 text-lg pd-x-2 text-justify">
-        Plongez au cœur de nos actions et découvrez l'impact concret de notre engagement à travers des images captivantes. Explorez notre galerie visuelle pour saisir l'essence de nos projets, notre interaction avec les communautés et les histoires de transformation que nous avons eu le privilège de partager.
-    </p>
+
+<div class="py-8 px-4 mx-auto max-w-screen-xl mt-44">
+  <h1
+    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-blue-600 md:text-5xl lg:text-6xl dark:text-white">
+    NOS ACTIONS EN IMAGES
+  </h1>
+  <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+    Plongez au cœur de nos actions et découvrez l'impact concret de notre engagement à travers des images captivantes.
+    Explorez notre galerie visuelle pour saisir l'essence de nos projets, notre interaction avec les communautés et les
+    histoires de transformation que nous avons eu le privilège de partager.
+  </p>
 </div>
 
-<div id="default-carousel" class="relative w-9/12 mx-auto my-10 z-0" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-[90vh]">
-        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+<div id="default-carousel" class="relative w-11/12 sm:w-8/12 mx-auto z-0" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-[90vh]">
+    <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="../../../../assets/img/galerie-photo1.png"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div> -->
-        <ng-container *ngFor="let photo of photos; let i = index">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-          </ng-container>
-    </div>
+    <ng-container *ngFor="let photo of photos; let i = index">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+    </ng-container>
+  </div>
 
-    <!-- Slider controls -->
-    <button type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev>
-        <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 1 1 5l4 4" />
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next>
-        <span
-            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
+  <!-- Slider controls -->
+  <button type="button"
+    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-prev>
+    <span
+      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button type="button"
+    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-next>
+    <span
+      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
 </div>
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4 pd-x-2">
+<div class="py-8 px-4 mx-auto max-w-screen-xl">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 ">
 
     <ng-container *ngFor="let photo of photos; let i = index">
-        <div class="h-auto max-w-full rounded-lg cursor-pointer">
-            <a href="../../../../assets/img/galerie-photo{{ i + 1 }}.png" target="_blank">
-                <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png" alt="...">
-            </a>
-        </div>
-      </ng-container>
+      <div class="h-auto max-w-full rounded-lg cursor-pointer">
+        <a href="../../../../assets/img/galerie-photo{{ i + 1 }}.png" target="_blank">
+          <img src="../../../../assets/img/galerie-photo{{ i + 1 }}.png" alt="...">
+        </a>
+      </div>
+    </ng-container>
 
+  </div>
 </div>
-
