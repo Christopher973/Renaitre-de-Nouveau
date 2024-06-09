@@ -1,0 +1,9 @@
+.line-height {
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 640px) {
+  .line-height {
+    line-height: 2.5rem;
+  }
+}
